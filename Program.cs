@@ -26,12 +26,12 @@ void Input(out string a1, out string a2, out string a3, out string a4, out strin
 string[] ShortMassiv(string[] arr)
 {
     int k = 0, j = 0;
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++) //сначала определим, сколько имеем коротких элементов, чтобы понять размер нового массива
     {
         if (arr[i].Length <= 3) k += 1;
     }
     string[] matr = new string[k];
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++) // теперь копируем короткие элементы в новый массив
     {
         if (arr[i].Length <= 3)
         {
